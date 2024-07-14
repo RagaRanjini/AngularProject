@@ -24,3 +24,21 @@ Before running the project, ensure you have the following installed:
 2) Angular CLI
 3) JSON Server
 4) NGINX
+
+# Setup Instructions
+## Clone the Repository
+git clone https://github.com/your-username/your-repository.git
+cd your-repository
+
+## Install Dependencies
+npm install
+
+## Start JSON Server
+json-server --watch Database.json --port 4500
+
+## Start Angular Development Server
+ng serve
+
+## Configure and Start NGINX
+Use the provided nginx.conf file and start the NGINX server:
+sudo nginx -c /path/to/your/project-folder/nginx/nginx.conf
