@@ -20,7 +20,7 @@ I have included the local NGINX configuration within the project folder, so you 
 ## Prerequisites
 Before running the project, ensure you have the following installed:
 
-Node.js (with npm)
-Angular CLI
-JSON Server
-NGINX
+1) Node.js (with npm)
+2) Angular CLI
+3) JSON Server
+4) NGINX
