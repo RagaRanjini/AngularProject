@@ -1,0 +1,56 @@
+<div class="row">
+    <div class="col">
+        <!-- image of that id drama -->
+        <img src="http://localhost:8081/DramaFandom/{{details.Image}}" alt="image">
+        <!-- that drama -- featuring and plot details -->
+        <hr>
+        <p><b>Featuring: {{details.Featuring}}</b></p>
+        <hr>
+        <!-- <p>{{details.Plot}}</p> -->
+        <mat-accordion>
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                                 (closed)="panelOpenState = false">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Synopsis
+                </mat-panel-title>
+                <mat-panel-description>
+                  <p>{{details.Title}}</p>
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <p>{{details.Plot}}</p>
+            </mat-expansion-panel>
+          </mat-accordion>
+    </div>
+    <div class="col">
+        <!-- reviews heading -->
+        <h1>Reviews</h1>
+        <hr>
+        <mat-card>
+            <mat-card-content>
+                <!-- review posting form -->
+                <form  [formGroup]="Form"  (submit)="postReview()">
+                    <div class="row">
+                        <div class="col-6">
+                            <textarea rows=3 cols=40 formControlName="message"></textarea>
+                        <div class="error" *ngIf='Form.controls.message.hasError("required")'>Should be filled</div>
+                        <div class="error" *ngIf='Form.controls.message.hasError("minlength")'>Atleast 15 characters long</div>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-primary" type="submit"  [disabled]="!Form.valid">Post my review</button>
+                        </div>
+                    </div>
+                </form>
+            </mat-card-content>
+        </mat-card>
+        <!-- calling content component, also iterating through each reviews of that drama -->
+        <div class="row" id="reviewbox">
+            <div class="container">
+                <div class="content">
+                    <app-reviews #myComponent *ngFor="let x of reviews|review: currentid" [review]="x"></app-reviews>
+                    <!-- used filter called review to take reviews of this drama whose id is stored in a variable called currentid -->
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
