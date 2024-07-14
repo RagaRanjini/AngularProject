@@ -41,7 +41,7 @@ export const IPurpleYou={
         backgroundColor:"#c222f2"
     },
     homebox:{
-        marginLeft:"640px",
+        marginLeft:"65%",
         color:"white"
     },
     themebox:{
@@ -79,7 +79,7 @@ export const AccentShade={
         backgroundColor:"#eb2c63"
     },
     homebox:{
-        marginLeft:"640px",
+        marginLeft:"65%",
         color:"white"
     },
     themebox:{

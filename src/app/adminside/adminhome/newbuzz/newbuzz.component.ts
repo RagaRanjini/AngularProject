@@ -26,7 +26,6 @@ postBuzz(){
           this.news="";
           this.image="";
           this.dialog.close();
-          this.router.navigate(['dramas'],{relativeTo:this.ar})
         },
         error:()=>alert("Some error occured --try later.")
       }

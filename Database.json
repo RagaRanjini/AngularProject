@@ -49,7 +49,7 @@
       "Released_Year": 2020,
       "Type": "old",
       "Seasons": "1",
-      "Likes": 3,
+      "Likes": 4,
       "Plot": "The series follows Ko Moon-young, an antisocial children's book writer who moves to her hometown to pursue her love interest Moon Gang-tae, a psych ward caretaker, who has been dedicating his life to taking care of his autistic older brother Moon Sang-tae."
     },
     {
@@ -74,7 +74,7 @@
       "Released_Year": 2019,
       "Type": "old",
       "Seasons": "1",
-      "Likes": 3,
+      "Likes": 4,
       "Plot": "A boy who is able to read the secrets of those whose skin comes into contact with him, and a girl who does everything she can to hide her pain. In the drama, the boy and girl will meet and try to fix, heal, grow, and love from the small and big occurrences that happen in their lives.",
       "id": "6"
     },
@@ -311,6 +311,11 @@
       "id": "8685",
       "news": "\"The Night has come\" - exciting thriller!",
       "image": "slide4.jfif"
+    },
+    {
+      "id": "b619",
+      "news": "Heirs - Remake?",
+      "image": "slide2.jpg"
     }
   ],
   "Reviews": [
@@ -418,6 +423,11 @@
       "product": "2",
       "message": "Good drama with great message..!",
       "id": "21"
+    },
+    {
+      "id": "5605",
+      "product": "4",
+      "message": "my fav couple !!!!"
     }
   ],
   "Chats": [
